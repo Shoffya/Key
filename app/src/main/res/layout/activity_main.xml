@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_animation"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="227dp"
+        android:layout_height="352dp"
+        app:layout_constraintBottom_toTopOf="@+id/view_container"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/image" />
+
+    <View
+        android:id="@+id/view_container"
+        style="@style/Container"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="270dp"
+        android:layout_height="75dp"
+        android:hint="Nº de caracteres"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toTopOf="@id/gerarSenha"
+        app:layout_constraintEnd_toEndOf="@id/view_container"
+        app:layout_constraintStart_toStartOf="@id/view_container"
+        app:layout_constraintTop_toTopOf="@+id/view_container">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/nCharacter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberPassword"
+            android:maxLength="3"
+            app:layout_constraintBottom_toBottomOf="@+id/viewCharacter"
+            app:layout_constraintEnd_toEndOf="@+id/viewCharacter"
+            app:layout_constraintStart_toStartOf="@+id/viewCharacter"
+            app:layout_constraintTop_toTopOf="@+id/viewCharacter" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/gerarSenha"
+        android:layout_width="148dp"
+        android:layout_height="74dp"
+        android:layout_marginTop="52dp"
+        android:backgroundTint="@color/black"
+        android:text="Gerar Senha"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/view_container"
+        app:layout_constraintEnd_toEndOf="@+id/view_container"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="@+id/view_container"
+        app:layout_constraintTop_toTopOf="@+id/view_container" />
+
+    <TextView
+        android:id="@+id/textViewObs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OBS: O mínimo 6 e máximo 100"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/view_container"
+        app:layout_constraintEnd_toEndOf="@+id/view_container"
+        app:layout_constraintStart_toStartOf="@+id/view_container"
+        app:layout_constraintTop_toBottomOf="@+id/gerarSenha" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
