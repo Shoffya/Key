@@ -8,7 +8,6 @@ import android.widget.Button
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_senha_gerada.*
-import kotlinx.android.synthetic.main.activity_senha_gerada.root_layout
 import kotlinx.android.synthetic.main.toast_custumization_copy.*
 
 class SenhaGeradaActivity : AppCompatActivity() {
@@ -22,7 +21,7 @@ class SenhaGeradaActivity : AppCompatActivity() {
         actionBar!!.title = "Voltar"
         actionBar.setDefaultDisplayHomeAsUpEnabled(true)
 
-        val animDrawable = root_layout.background as AnimationDrawable
+        val animDrawable = root_layout_password.background as AnimationDrawable
         animDrawable.setEnterFadeDuration(3)
         animDrawable.setExitFadeDuration(5000)
         animDrawable.start()

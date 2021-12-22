@@ -10,17 +10,22 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Key">
         <activity
-            android:name=".SenhaGeradaActivity"
-            android:parentActivityName=".MainActivity"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity"
+            android:name=".SplashActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".SenhaGeradaActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity">
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
         </activity>
     </application>
 

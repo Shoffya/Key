@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity() {
         Character = findViewById(R.id.nCharacter)
         Character.transformationMethod = null
 
-        val animDrawable = root_layout.background as AnimationDrawable
+        val animDrawable = root_layout_main.background as AnimationDrawable
         animDrawable.setEnterFadeDuration(3)
         animDrawable.setExitFadeDuration(5000)
         animDrawable.start()
