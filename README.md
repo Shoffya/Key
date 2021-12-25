@@ -39,14 +39,16 @@ E se isso acontecer, retorna também uma outra mensagem através de uma função
                 toastErrorNull()
             }
         ...
-        ```
-
+       
+        ...
         private fun toastErrorNull(){
-        val view = layoutInflater.inflate(R.layout.toast_customization_error_null,container_error_null)
+            val view = layoutInflater.inflate(R.layout.toast_customization_error_null,container_error_null)
 
-        val toast_error_null = Toast(this)
-        toast_error_null.view = view
-        toast_error_null.duration = Toast.LENGTH_LONG
-        toast_error_null.show()
-    }
+            val toast_error_null = Toast(this)
+            toast_error_null.view = view
+            toast_error_null.duration = Toast.LENGTH_LONG
+            toast_error_null.show()
+        }
+        ...
+        ```
 
