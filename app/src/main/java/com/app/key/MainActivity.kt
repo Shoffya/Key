@@ -9,8 +9,8 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.text.isDigitsOnly
 import kotlinx.android.synthetic.main.activity_main.*
-import kotlinx.android.synthetic.main.toast_custumization_error_character.*
-import kotlinx.android.synthetic.main.toast_custumization_error_null.*
+import kotlinx.android.synthetic.main.toast_customization_error_character.*
+import kotlinx.android.synthetic.main.toast_customization_error_null.*
 
 
 class MainActivity : AppCompatActivity() {
@@ -52,7 +52,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun toastErrorNull(){
-        val view = layoutInflater.inflate(R.layout.toast_custumization_error_null,container_error_null)
+        val view = layoutInflater.inflate(R.layout.toast_customization_error_null,container_error_null)
 
         val toast_error_null = Toast(this)
         toast_error_null.view = view
@@ -61,7 +61,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun toastErrorCharacter(){
-        val view = layoutInflater.inflate(R.layout.toast_custumization_error_character,container_error_character)
+        val view = layoutInflater.inflate(R.layout.toast_customization_error_character,container_error_character)
 
         val toast_error_character = Toast(this)
         toast_error_character.view = view

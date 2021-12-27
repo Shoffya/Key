@@ -8,7 +8,7 @@ import android.widget.Button
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_senha_gerada.*
-import kotlinx.android.synthetic.main.toast_custumization_copy.*
+import kotlinx.android.synthetic.main.toast_customization_copy.*
 
 class SenhaGeradaActivity : AppCompatActivity() {
 
@@ -48,7 +48,7 @@ class SenhaGeradaActivity : AppCompatActivity() {
     }
 
     private fun toastCopySuccess(){
-        val view = layoutInflater.inflate(R.layout.toast_custumization_copy,container_copy_success)
+        val view = layoutInflater.inflate(R.layout.toast_customization_copy,container_copy_success)
 
         val toast_Success = Toast(this)
         toast_Success.view = view
