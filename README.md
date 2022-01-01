@@ -52,7 +52,7 @@ A aplicação funciona da seguinte forma:
         ...
         ```
 
-* Depois das dependencias citadas a cima, é verificado se a quantidade de caracteres desejada pelo usuário é de 6 a 100 e, caso for, esse valor é colocado em uma "chave" (que será usada mais a diante), e a outra tela (activity) é chamada. Caso a condição não seja verdadeira, é retornado uma mensagem através de outra função de toast personalizado:
+* Depois das dependências citadas acima, é verificado se a quantidade de caracteres desejada pelo usuário é de 6 a 100 e, caso for, esse valor é colocado em uma "chave" (que será usada mais a diante), e a outra tela (activity) é chamada. Caso a condição não seja verdadeira, é retornado uma mensagem através de outra função de toast personalizado:
 
 
         ```kotlin
@@ -137,7 +137,7 @@ A aplicação funciona da seguinte forma:
 
         ´´´
 
-* Se caso a senha não for do agrado, o usuário pode retornar a primeira activity através do botão de voltar e realisar o processo novamente.
+* Se caso a senha não for do agrado, o usuário pode retornar a primeira activity através do botão de voltar e realizar o processo novamente.
 
 ### Observações:
 ***
