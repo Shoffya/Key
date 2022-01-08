@@ -31,11 +31,11 @@ class SenhaGeradaActivity : AppCompatActivity() {
 
         val k = makeKey(senhaGerada)
 
-        key.text = ("$k")
+        key.text = ("\n $k")
 
         val copyPassword: Button = findViewById(R.id.Copia)
         copyPassword.setOnClickListener {
-            onClickCopy(key.text)
+            onClickCopy(k)
         }
     }
 
